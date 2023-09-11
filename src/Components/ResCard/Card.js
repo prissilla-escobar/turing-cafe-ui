@@ -9,7 +9,7 @@ function Card(props) {
                 {props.name} <br />
                 {props.date} <br />
                 {props.time} <br />
-                Number of guests:{props.number}
+                Number of guests: {props.number}
                 <button>Cancel</button>
             </div>
         </div>
