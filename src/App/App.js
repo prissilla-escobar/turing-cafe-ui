@@ -15,6 +15,9 @@ function App() {
       })
   }, [])
 
+  function newReservation() {
+    setReservations(...reservations)
+  }
 
   return (
     <div className="App">
@@ -23,7 +26,7 @@ function App() {
       </div>
       <div className='resy-container'>
       </div>
-      <Form />
+      <Form newReservation={newReservation}/>
       <AllReservations reservations={reservations} />
     </div>
   );
