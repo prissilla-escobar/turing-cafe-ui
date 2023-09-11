@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import { getReservations } from '../api';
 import { useState, useEffect } from 'react';
-import Card from '../Components/ResCard/Card';
+import AllReservations from '../Components/AllRes/AllReservations';
 
 function App() {
   const [reservations, setReservations] = useState([])
@@ -22,7 +22,7 @@ function App() {
       </div>
       <div className='resy-container'>
       </div>
-      <Card reservations={reservations} />
+      <AllReservations reservations={reservations} />
     </div>
   );
 }
