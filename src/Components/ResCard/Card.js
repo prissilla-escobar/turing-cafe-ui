@@ -1,21 +1,15 @@
 import '../ResCard/Card.css'
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 
-function Card({ reservations }) {
-    const [singleReservation, setSingleReservation] = useState()
-
-    // const res = reservations.map(data => setSingleReservation(data))
-    // console.log(singleReservation)
-
-    useEffect(() => {
-        reservations.map(data => setSingleReservation(data))
-        console.log(singleReservation)
-    }, [])
+function Card(props) {
 
     return (
         <div className="card">
             <div className="reservation-info">
-                {singleReservation}
+                {props.name} <br />
+                {props.date} <br />
+                {props.time} <br />
+                Number of guests:{props.number}
                 <button>Cancel</button>
             </div>
         </div>
