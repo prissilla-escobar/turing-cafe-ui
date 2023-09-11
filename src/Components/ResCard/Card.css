@@ -1,0 +1,18 @@
+* {
+    border: 1px solid salmon;
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+    color: black;
+}
+
+.reservation-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 200px;
+}
