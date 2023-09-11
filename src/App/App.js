@@ -3,6 +3,7 @@ import React from 'react';
 import { getReservations } from '../api';
 import { useState, useEffect } from 'react';
 import AllReservations from '../Components/AllRes/AllReservations';
+import Form from '../Components/Form/Form';
 
 function App() {
   const [reservations, setReservations] = useState([])
@@ -22,6 +23,7 @@ function App() {
       </div>
       <div className='resy-container'>
       </div>
+      <Form />
       <AllReservations reservations={reservations} />
     </div>
   );
