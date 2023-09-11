@@ -1,15 +1,26 @@
-// import '../AllRes/AllReservations.css'
-// import Card from '../ResCard/Card'
+import '../AllRes/AllReservations.css'
+import Card from '../ResCard/Card'
 
-// function AllReservations(props) {
+function AllReservations( {reservations} ) {
+    console.log("ALLRES", reservations)
+    const reservationCard = reservations.map(res => {
+        return (
+            <Card
+              id={res.id}
+              name={res.name}
+              date={res.date}
+              time={res.time}
+              number={res.number}
+              key={res.id}
+            />
+        )
+    })
 
-//     console.log(props)
+    return (
+        <div className="all-reservations">
+            {reservationCard}
+        </div>
+    )
+}
 
-//     return (
-//         <div>
-//             <Card />
-//         </div>
-//     )
-// }
-
-// export default AllReservations
+export default AllReservations
