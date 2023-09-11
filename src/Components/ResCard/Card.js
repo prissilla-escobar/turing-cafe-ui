@@ -1,5 +1,4 @@
 import '../ResCard/Card.css'
-// import { useState, useEffect } from 'react'
 
 function Card(props) {
 
