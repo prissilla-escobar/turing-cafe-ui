@@ -1,6 +1,7 @@
 import '../AllRes/AllReservations.css'
 import Card from '../ResCard/Card'
 
+
 function AllReservations( {reservations} ) {
     console.log("ALLRES", reservations)
     const reservationCard = reservations.map(res => {
